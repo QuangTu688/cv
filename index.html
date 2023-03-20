@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">
+            <img src="./Imgae/logo.png" alt="">
+        </div>
+        <input type="checkbox" id="clickIcon">
+     
+        <div class="menubar">
+            <label for="clickIcon">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+        </div>
+        <div class="close">
+            <label for="clickIcon">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+        </div>
+        <ul class="nav">
+            <li class="nav_list">
+                <a href="">Home</a>
+            </li>
+            <li class="nav_list">
+                <a href="#slide">Slide</a>
+            </li>
+            <li class="nav_list">
+                <a href="#skill">Skill</a>
+            </li>
+            <li class="nav_list">
+                <a href="#project">Project</a>
+            </li>
+            <li class="nav_list">
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <!-- Module Slide -->
+    <div id="slide">
+        <div class="text">
+            <div class="txt_intro">
+                <span>Welcome to Profile</span>
+            </div>
+            <div class="txt_name">
+                <span>Hi I'm Nguyen Quang Tu a</span>
+                <div class="txt_gradien">
+                    <div class="job" data-job1="Frontend" data-job2="Developer" ></div>
+                </div>
+            </div>
+            <div class="txt_des">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint sed facere, quasi blanditiis sequi maxime excepturi reprehenderit aut repellendus rem!
+            </div>
+            <div class="find">
+                <div class="icons"><a target="_blank" href="https://www.facebook.com/Tu.4.luu"><i class="fa-brands fa-facebook"></i></a></div>
+                <div class="icons"><a target="_blank" href=""><i class="fa-brands fa-instagram"></i></a></div>
+                <div class="icons"><a target="_blank" href=""><i class="fa-brands fa-twitter"></i></a></div>
+            </div>
+        </div>
+        <div class="avt">
+            <!-- <img src="./Imgae/avatar.png" alt=""> -->
+            <img src="./Imgae/quang_tu-removebg-preview.png" alt="">
+        </div>
+        
+    </div>
+    <!-- Module Skill -->
+    <div id="skill">
+        <h2 class="title">Skill</h2>
+        <div class="skills">
+            <div class="item">
+                <p class="txt_des">Html</p>
+                <div class="skill_line" style="--point:80%" data-txt="80%"></div>
+            </div>
+            <div class="item">
+                <p class="txt_des">Css</p>
+                <div class="skill_line" style="--point:60%" data-txt="60%"></div>
+            </div>
+            <div class="item">
+                <p class="txt_des">Scss</p>
+                <div class="skill_line" style="--point:30%" data-txt="30%"></div>
+            </div>
+            <div class="item">
+                <p class="txt_des">Javascript</p>
+                <div class="skill_line" style="--point:70%" data-txt="70%"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Module Project -->
+    <div id="project">
+        <h2 class="title">Project</h2>
+        <div class="projects"> 
+            <div class="item">
+                <div class="image image_modal">
+                   
+                    <a href="#dialog_modal" id="demo">
+                        Demo1
+                    </a>
+                    <img src="./Imgae/img1.jpg" alt="">
+                </div>
+                
+                <div class="name_project"><a href="">Project 1</a></div>
+            </div>
+            <div class="item">
+                <div class="image image_modal">
+                    <a href="#dialog_modal2" id="demo">
+                        Demo2
+                    </a>
+                    <img src="./Imgae/img2.jpg" alt="">
+                </div>
+                <div class="name_project"><a href="">Project 2</a></div>
+            </div>
+            <div class="item">
+                <div class="image image_modal">
+                    <a href="#dialog_modal3" id="demo">
+                        Demo3
+                    </a>
+                    <img src="./Imgae/img3.jpg" alt="">
+                </div>
+                <div class="name_project"><a href="">Project 3</a></div>
+            </div>
+        </div>
+    </div>
+    <!-- Module Contact -->
+    <div id="contact">
+        <div class="title">Contact</div>
+        <div class="find">
+            <div class="icons"><a target="_blank" href="https://www.facebook.com/Tu.4.luu"><i class="fa-brands fa-facebook"></i></a></div>
+            <div class="icons"><a target="_blank" href=""><i class="fa-brands fa-instagram"></i></a></div>
+            <div class="icons"><a target="_blank" href=""><i class="fa-brands fa-twitter"></i></a></div>
+        </div>
+    </div>
+    <!-- Modal One -->
+    <div id="dialog_modal">
+        <a href="#project" class="close_modal"></a>
+        <div class="modal_content">
+            <a href="#project" class="modal_close">&times;</a>
+        <img src="./Imgae/img1.jpg" alt="">
+        <h2 class="title_project">Project 1</h2>
+        <p class="time">20 - 03 - 2023</p>
+        <p class="name">Nguyen Quang Tu</p>
+        <button>Xem thêm</button>
+        </div>
+    </div>
+    <!-- Modal Two -->
+    <div id="dialog_modal2">
+        <a href="#project" class="close_modal"></a>
+        <div class="modal_content">
+            <a href="#project" class="modal_close">&times;</a>
+        <img src="./Imgae/img2.jpg" alt="">
+        <h2 class="title_project">Project 2</h2>
+        <p class="time">20 - 03 - 2023</p>
+        <p class="name">Nguyen Quang Tu</p>
+        <button>Xem thêm</button>
+        </div>
+    </div>
+    <!-- Modal There -->
+    <div id="dialog_modal3">
+        <a href="#project" class="close_modal"></a>
+        <div class="modal_content">
+            <a href="#project" class="modal_close">&times;</a>
+        <img src="./Imgae/img3.jpg" alt="">
+        <h2 class="title_project">Project 3</h2>
+        <p class="time">20 - 03 - 2023</p>
+        <p class="name">Nguyen Quang Tu</p>
+        <button>Xem thêm</button>
+        </div>
+    </div>
+    <!-- End -->
+</body>
+</html>
